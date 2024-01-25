@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+main{
+    margin-top: -8px;
+}
+header{
+    text-align: center;
+    background-image: url('../images/bgi2.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5));
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 2px;
+}
+
+footer{
+    text-align: center;
+}
+
+.cover{
+    border-radius: 12px;
+    background-color: rgb(235, 232, 232);
+    padding: 15px;
+}
+
+.btn-end{
+    text-align: right;
+}
+
+.outro{
+    padding: 0; 
+    margin: 0;
+    border: 0;
+    text-align: right;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.body{
+    text-indent: 2em;
+    padding: 0; 
+    margin: 0;
+    border: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.introduction{
+    padding: 0; 
+    margin: 0;
+    border: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+}

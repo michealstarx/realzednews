@@ -1,1 +1,1 @@
-web: gunicorn realzednews.wsgi
+web: gunicorn RealZedNews.wsgi

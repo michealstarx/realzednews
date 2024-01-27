@@ -13,3 +13,6 @@ def article(request, id):
         'post': Post.objects.get(id=id)
     }
     return render(request, 'main/article.html', context)
+
+def images(request):
+    return render(request, 'main/images.html')

@@ -2,11 +2,13 @@
 <!Doctype html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Real Zed News</title>
         <link rel="stylesheet" href="{% static 'main/css/main.css' %}"/>
         <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}"/>
     </head>
-    <body>
+    <body style="width: 100%;">
         <header>
             <h1>Real Zed</h1>
             <img src="{% static 'main/images/logo.jpg' %}" height="130px" width="130px" alt="logo" style='border-radius: 50%'/>
@@ -15,14 +17,12 @@
         <main><br/>
             <div class="container">
                 {% for post in posts %}
-                    <div class="row">
                         <div class='cover'>
                             <p class='title'>{{post.title}}</p>
-                            <p style="text-align: center;"><img src="{{post.image}}" height="" width="" alt="{{post.title}}"/>
+                            <p style="text-align: center;"><img src="{{post.image}}" height="200px" alt="{{post.title}}"/>
                             <p class='introduction'>{{post.introduction}}</p>
                             <p class='btn-end'><a href="{% url 'article' post.id %}">Finish ...</a></p>
-                        </div>
-                    </div><br/>
+                        </div><br/>
                 {% endfor %}
             </div>
             <br/>
@@ -39,7 +39,7 @@
             <br/> {% endcomment %}
         </main>
         <footer>
-            <h5>Real, trusted and educative news</h5>
+            <h5>Real, Important and Educative news</h5>
         </footer>
     </body>
 </html>

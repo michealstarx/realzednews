@@ -1,24 +1,29 @@
 *{
     padding: 0;
     margin: 0;
-    font-size: 16px;
+}
+h1{
+    font-size: 36px;
 }
 main{
-    margin-top: -8px;
+    margin-top: 12px;
 }
 header{
     text-align: center;
-    background-image: url('../images/bgi.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url('../images/bgi.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 }
 
 .title{
-    font-size: 24px;
+    font-size: 1.25em;
     text-align: center;
     font-weight: bolder;
     margin: 2px;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 footer{
@@ -28,7 +33,7 @@ footer{
 .cover{
     border-radius: 12px;
     background-color: rgb(235, 232, 232);
-    padding: 15px;
+    
 }
 
 .btn-end{
@@ -59,4 +64,9 @@ footer{
     border: 0;
     margin-left: 1em;
     margin-right: 1em;
+}
+
+footer{
+    background-color: black;
+    padding: 20px;
 }

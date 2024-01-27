@@ -2,6 +2,8 @@
 <!Doctype html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RZN: {{post.title}}</title>
         <link rel="stylesheet" href="{% static 'main/css/article.css' %}"/>
         <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}"/>
@@ -14,30 +16,29 @@
         </header>
         <main><br/>
             <div class="container">
-                <div class="row">
                     <div class='cover'>
                         <p class='title'>{{post.title}}</p>
                         <p style="text-align: center;"><img src="{{post.image}}" height="200px" alt="{{post.title}}"/></p>
                         <p class='introduction'>{{post.introduction}}</p>
-                        <p class='body'>{{post.body}}</p>
-                        <p class='body'>{{post.body1}}</p>
-                        <p class='body'>{{post.body2}}</p>
-                        <p class='body'>{{post.body3}}</p>
-                        <p class='body'>{{post.body4}}</p>
-                        <p class='body'>{{post.body5}}</p>
-                        <p class='body'>{{post.body6}}</p>
-                        <p class='body'>{{post.body7}}</p>
-                        <p class='body'>{{post.body8}}</p>
-                        <p class='body'>{{post.body9}}</p>
-                        <p class='body'>{{post.body10}}</p>
+                        <p class='articlebody'>{{post.body}}</p>
+                        <p class='articlebody'>{{post.body1}}</p>
+                        <p class='articlebody'>{{post.body2}}</p>
+                        <p class='articlebody'>{{post.body3}}</p>
+                        <p class='articlebody'>{{post.body4}}</p>
+                        <p class='articlebody'>{{post.body5}}</p>
+                        <p class='articlebody'>{{post.body6}}</p>
+                        <p class='articlebody'>{{post.body7}}</p>
+                        <p class='articlebody'>{{post.body8}}</p>
+                        <p class='articlebody'>{{post.body9}}</p>
+                        <p class='articlebody'>{{post.body10}}</p><br/><br/>
                         <p class='outro'><b>Posted By: </b>{{post.posted_by}}</p>
                         <p class='outro'><b>Position: </b>{{post.position}}</p>
-                    </div>
-                </div><br/>
+                    </div><br/>
         </div>
         </main>
         <footer>
-            <h5>Real, trusted and educative news</h5>
+            <h5>Real, Important and Educative news</h5>
         </footer>
     </body>
 </html>
+

@@ -8,18 +8,20 @@ main{
 }
 header{
     text-align: center;
-    background-image: url('../images/bgi2.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url('../images/bgi2.jpg');
     color: white;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
 }
 
 .title{
-    font-size: 24px;
+    font-size: 1.25em;
     text-align: center;
     font-weight: bolder;
     margin: 2px;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 footer{
@@ -29,7 +31,7 @@ footer{
 .cover{
     border-radius: 12px;
     background-color: rgb(235, 232, 232);
-    padding: 15px;
+    
 }
 
 .btn-end{
@@ -45,8 +47,7 @@ footer{
     margin-right: 1em;
 }
 
-.body{
-    text-indent: 2em;
+.introduction{
     padding: 0; 
     margin: 0;
     border: 0;
@@ -54,10 +55,17 @@ footer{
     margin-right: 1em;
 }
 
-.introduction{
+.articlebody{
+    text-indent: 2em;
     padding: 0; 
     margin: 0;
     border: 0;
+    
     margin-left: 1em;
     margin-right: 1em;
+}
+
+footer{
+    background-color: black;
+    padding: 20px;
 }

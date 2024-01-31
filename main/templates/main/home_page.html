@@ -19,7 +19,7 @@
                 {% for post in posts %}
                         <div class='cover'>
                             <p class='title'>{{post.title}}</p>
-                            <div style="text-align: right; margin-right: 20px;"><small>{{post.date_time}}</small></div>
+                            <div class="writer"><b>{{post.posted_by}}</b> <small>{{post.date_time}}</small></div>
                             <p style="text-align: center;"><img src="{{post.image}}" height="175px" alt="{{post.title}}"/>
                             <p class='introduction'>{{post.introduction}}</p>
                             <p class='btn-end'><a href="{% url 'article' post.id %}">Finish ...</a></p>

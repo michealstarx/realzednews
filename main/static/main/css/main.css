@@ -28,6 +28,12 @@ header{
     margin: 2px;
     padding-top: 1em;
     padding-bottom: 1em;
+    font-family: "Castoro Titling", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: 'normal';
+    text-align: 'center';
+
 }
 
 footer{
@@ -42,6 +48,8 @@ footer{
 
 .btn-end{
     text-align: right;
+    margin-right: 20px;
+    padding-bottom: 20px;
 }
 
 .outro{
@@ -68,6 +76,10 @@ footer{
     border: 0;
     margin-left: 1em;
     margin-right: 1em;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: 'normal';
 }
 
 footer{

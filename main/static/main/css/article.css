@@ -22,6 +22,11 @@ header{
     margin: 2px;
     padding-top: 1em;
     padding-bottom: 1em;
+    font-family: "Castoro Titling", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: 'normal';
+    text-align: 'center';
 }
 
 footer{
@@ -46,6 +51,15 @@ footer{
     margin-left: 1em;
     margin-right: 1em;
 }
+.outrofinal{
+    padding: 0; 
+    margin: 0;
+    border: 0;
+    text-align: right;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-bottom: 20px;
+}
 
 .introduction{
     padding: 0; 
@@ -53,16 +67,23 @@ footer{
     border: 0;
     margin-left: 1em;
     margin-right: 1em;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: 'normal';
 }
 
 .articlebody{
     text-indent: 2em;
     padding: 0; 
     margin: 0;
-    border: 0;
-    
+    border: 0;  
     margin-left: 1em;
     margin-right: 1em;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: 'normal';
 }
 
 footer{

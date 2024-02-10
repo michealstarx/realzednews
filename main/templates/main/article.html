@@ -14,14 +14,14 @@
     </head>
     <body>
         <header>
-            <h1>Real ZED</h1>
+            <div class="htitle">Real ZED</div>
             <img src="{% static 'main/images/logo.jpg' %}" height="130px" width="130px" alt="logo" style='border-radius: 50%'/>
-            <h1>NEWS</h1>
+            <div class="htitle">NEWS</div>
         </header>
         <main><br/>
             <div class="container">
                     <div class='cover'>
-                        <p class='title'>{{post.title}}</p>
+                        <h1 class='title'>{{post.title}}</h1>
                         <div style="text-align: right; margin-right: 20px;"><small>{{post.date_time}}</small></div>
                         <p style="text-align: center;"><img src="{{post.image}}" height="175px" alt="{{post.title}}"/></p>
                         <p class='introduction'>{{post.introduction}}</p>

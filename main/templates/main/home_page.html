@@ -14,15 +14,15 @@
     </head>
     <body style="width: 100%;">
         <header>
-            <h1>Real ZED</h1>
+            <div class="htitle">Real ZED</div>
             <img src="{% static 'main/images/logo.jpg' %}" height="130px" width="130px" alt="logo" style='border-radius: 50%'/>
-            <h1>NEWS</h1>
+            <div class="htitle">NEWS</div>
         </header>
         <main><br/>
             <div class="container">
                 {% for post in posts %}
                         <div class='cover'>
-                            <p class='title'>{{post.title}}</p>
+                            <h1 class='title'>{{post.title}}</h1>
                             <div class="writer"><b>{{post.posted_by}}</b> <small>{{post.date_time}}</small></div>
                             <p style="text-align: center;"><img src="{{post.image}}" height="175px" alt="{{post.title}}"/>
                             <p class='introduction'>{{post.introduction}}</p>

@@ -3,6 +3,10 @@
     margin: 0;
     font-size: 16px;
 }
+.htitle{
+    font-size: 36px;
+    font-weight: bolder;
+}
 main{
     margin-top: -8px;
 }

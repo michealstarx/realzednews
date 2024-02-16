@@ -42,7 +42,23 @@
                         <p class='articlebody'>{{post.body8}}</p>
                         <p class='articlebody'>{{post.body9}}</p>
                         <p class='articlebody'>{{post.body10}}</p><br/><br/>
-                        <p class='outro'><b>Posted By: </b>{{post.posted_by}}</p>
+                        <p class='outro'><b>Posted By: </b>
+                            
+                            {% if post.posted_by == "Jennifer Hangoma" %}
+                                <a href="https://facebook.com/jenniferchanger" style="text-decoration: none;">{{post.posted_by}}</a>
+                            {% elif post.posted_by == "John Tembo" %}
+                                <a href="" style="text-decoration: none;">{{post.posted_by}}</a>
+                            {% elif post.posted_by == "Mary Mwelwa" %}
+                                <a href="" style="text-decoration: none;">{{post.posted_by}}</a>
+                            {% elif post.posted_by == "Judy Sakala" %}
+                                <a href="" style="text-decoration: none;">{{post.posted_by}}</a>
+                            {% elif post.posted_by == "Charles Mulenga" %}
+                                <a href="" style="text-decoration: none;">{{post.posted_by}}</a>
+                            {% else %}
+                                <b>{{post.posted_by}}</b>
+                            {% endif %}
+                        
+                        </p>
                         <p class='outrofinal'><b>Position: </b>{{post.position}}</p>
                     </div><br/>
         </div>

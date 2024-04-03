@@ -1,0 +1,88 @@
+{% load static %}
+<!Doctype html>
+<html>
+    <head>
+        <!-- Meta Tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="X7FAtoNoxQJkwdOHWsLIQ2NgOmJx7VgO-S2ZOZNxx5A" />
+
+
+        <title>RZN: {{hot.title}}</title>
+
+        <!--Link styles -->
+        <link rel="stylesheet" href="{% static 'main/css/article.css' %}"/>
+        <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet"/>
+    
+    </head>
+    <body>
+        <header>
+            <div class="htitle">Real ZED</div>
+            <img src="{% static 'main/images/logo.jpg' %}" height="130px" width="130px" alt="logo" style='border-radius: 50%'/>
+            <div class="htitle">NEWS</div>
+        </header>
+        <main><br/>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-9">
+                        <div class='cover'>
+                            <h1 class='title'>{{hot.title}}</h1>
+                            <div style="text-align: right; margin-right: 20px;"><small>{{hot.date_time}}</small></div>
+                            <div style="text-align: right; margin-right: 30px;"><small><b>Views:</b> <i>{{hot.views}}k</i></small></div>
+                            <p style="text-align: center;"><img src="{{hot.image}}" height="175px" alt="{{hot.title}}"/></p>
+                            <p class='introduction'>{{hot.introduction}}</p>
+                            <p class='articlebody'>{{hot.body}}</p>
+                            <p class='articlebody'>{{hot.body1}}</p>
+                            <p class='articlebody'>{{hot.body2}}</p>
+                            <p class='articlebody'>{{hot.body3}}</p>
+                            <p class='articlebody'>{{hot.body4}}</p>
+                            <p class='articlebody'>{{hot.body5}}</p>
+                            <p class='articlebody'>{{hot.body6}}</p>
+                            <p class='articlebody'>{{hot.body7}}</p>
+                            <p class='articlebody'>{{hot.body8}}</p>
+                            <p class='articlebody'>{{hot.body9}}</p>
+                            <p class='articlebody'>{{hot.body10}}</p><br/><br/>
+                            <p class='outro'><b>Posted By: </b>
+                                
+                                {% if hot.posted_by == "Jennifer Hangoma" %}
+                                        <a href="https://www.facebook.com/share/XNpr34VDd43brgwn/?mibextid=LQQJ4d" style="text-decoration: none;">{{hot.posted_by}}</a>
+                                    {% elif hot.posted_by == "John Tembo" %}
+                                        <a href="https://www.facebook.com/johntemboofficial?mibextid=LQQJ4d" style="text-decoration: none;">{{hot.posted_by}}</a>
+                                    {% elif hot.posted_by == "Mary Mwelwa" %}
+                                        <a href="https://www.facebook.com/marymwelwaofficial?mibextid=LQQJ4d" style="text-decoration: none;">{{hot.posted_by}}</a>
+                                    {% elif hot.posted_by == "Judy Sakala" %}
+                                        <a href="https://www.facebook.com/share/XXcodq2zMqzrhGVs/?mibextid=LQQJ4d" style="text-decoration: none;">{{hot.posted_by}}</a>
+                                    {% elif hot.posted_by == "Charles Mulenga" %}
+                                        <a href="https://www.facebook.com/charlesmulengaofficial?mibextid=LQQJ4d" style="text-decoration: none;">{{hot.posted_by}}</a>
+                                {% else %}
+                                    <b>{{hot.posted_by}}</b>
+                                {% endif %}
+                            
+                            </p>
+                            <p class='outrofinal'><b>Position: </b>{{hot.position}}</p>
+                        </div><br/>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div style="text-align: center;">
+                            <b>Social Networks</b>
+                        </div>
+                        <ul style="display: inline-block; list-style: none;">
+                            <li><a href="https://www.facebook.com/">FaceBook</a></li><br/>
+                            <!-- <li><a href="https:wh">WhatsApp</a></li><br/>
+                            <li><a href="https://www.instagram.com/">Instagram</a></li><br/> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h5>Real, Important and Educative news</h5>
+        </footer>
+    </body>
+</html>
+

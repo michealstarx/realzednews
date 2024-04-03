@@ -26,32 +26,68 @@
         </header>
         <main><br/>
             <div class="container">
-                {% for post in posts %}
-                        <div class='cover'>
-                            <h1 class='title'>{{post.title}}</h1>
-                            <div class="writer"><b>
-                                {% if post.posted_by == "Jennifer Hangoma" %}
-                                    <a href="https://www.facebook.com/share/XNpr34VDd43brgwn/?mibextid=LQQJ4d" style="text-decoration: none;">{{post.posted_by}}</a>
-                                {% elif post.posted_by == "John Tembo" %}
-                                    <a href="https://www.facebook.com/johntemboofficial?mibextid=LQQJ4d" style="text-decoration: none;">{{post.posted_by}}</a>
-                                {% elif post.posted_by == "Mary Mwelwa" %}
-                                    <a href="https://www.facebook.com/marymwelwaofficial?mibextid=LQQJ4d" style="text-decoration: none;">{{post.posted_by}}</a>
-                                {% elif post.posted_by == "Judy Sakala" %}
-                                    <a href="https://www.facebook.com/share/XXcodq2zMqzrhGVs/?mibextid=LQQJ4d" style="text-decoration: none;">{{post.posted_by}}</a>
-                                {% elif post.posted_by == "Charles Mulenga" %}
-                                    <a href="https://www.facebook.com/charlesmulengaofficial?mibextid=LQQJ4d" style="text-decoration: none;">{{post.posted_by}}</a>
+                <div class="row">
+                    <div class="col-md-7">
+                        {% for post in posts %}
+                            <div class='cover'>
+                                <h1 class='title'>{{post.title}}</h1>
+                                <div class="writer"><b>
+                                    {% if post.posted_by == "Jennifer Hangoma" %}
+                                        <a href="https://www.facebook.com/share/XNpr34VDd43brgwn/?mibextid=LQQJ4d" style="text-decoration: none;">{{post.posted_by}}</a>
+                                    {% elif post.posted_by == "John Tembo" %}
+                                        <a href="https://www.facebook.com/johntemboofficial?mibextid=LQQJ4d" style="text-decoration: none;">{{post.posted_by}}</a>
+                                    {% elif post.posted_by == "Mary Mwelwa" %}
+                                        <a href="https://www.facebook.com/marymwelwaofficial?mibextid=LQQJ4d" style="text-decoration: none;">{{post.posted_by}}</a>
+                                    {% elif post.posted_by == "Judy Sakala" %}
+                                        <a href="https://www.facebook.com/share/XXcodq2zMqzrhGVs/?mibextid=LQQJ4d" style="text-decoration: none;">{{post.posted_by}}</a>
+                                    {% elif post.posted_by == "Charles Mulenga" %}
+                                        <a href="https://www.facebook.com/charlesmulengaofficial?mibextid=LQQJ4d" style="text-decoration: none;">{{post.posted_by}}</a>
 
 
-                                {% else %}
-                                    <b>{{post.posted_by}}</b>
-                                {% endif %}
-                                </b> 
-                                <small>{{post.date_time}}</small></div>
-                            <p style="text-align: center;"><img src="{{post.image}}" height="175px" alt="{{post.title}}"/>
-                            <p class='introduction'>{{post.introduction}}</p>
-                            <p class='btn-end'><a href="{% url 'article' post.id %}" style="text-decoration: none;">Finish ...</a></p>
-                        </div><br/>
-                {% endfor %}
+                                    {% else %}
+                                        <b>{{post.posted_by}}</b>
+                                    {% endif %}
+                                    </b> 
+                                    <small>{{post.date_time}}</small></div>
+                                    <div style="text-align: right; margin-right: 30px;"><small><b>Views:</b> <i>{{post.views}}k</i></small></div>
+                                <p style="text-align: center;"><img src="{{post.image}}" height="175px" alt="{{post.title}}"/>
+                                <p class='introduction'>{{post.introduction}}</p>
+                                <p class='btn-end'><a href="{% url 'article' post.id %}" style="text-decoration: none;">Finish ...</a></p>
+                            </div><br/>
+                        {% endfor %}
+                    </div>
+                    <div class="col-md-5" style="background-image: linear-gradient(rgb(4, 246, 166), rgb(45, 45, 251), rgb(4, 246, 166));">
+                        <div style="text-align: center; margin-top: 15px;"><h2>Hottest</h2></div>
+                        {% for hot in hottest %}
+                            <div class='cover' style="margin-top: 20px;">
+                                <h1 class='title'>{{hot.title}}</h1>
+                                <div class="writer"><b>
+                                    {% if hot.posted_by == "Jennifer Hangoma" %}
+                                        <a href="https://www.facebook.com/share/XNpr34VDd43brgwn/?mibextid=LQQJ4d" style="text-decoration: none;">{{hot.posted_by}}</a>
+                                    {% elif hot.posted_by == "John Tembo" %}
+                                        <a href="https://www.facebook.com/johntemboofficial?mibextid=LQQJ4d" style="text-decoration: none;">{{hot.posted_by}}</a>
+                                    {% elif hot.posted_by == "Mary Mwelwa" %}
+                                        <a href="https://www.facebook.com/marymwelwaofficial?mibextid=LQQJ4d" style="text-decoration: none;">{{hot.posted_by}}</a>
+                                    {% elif hot.posted_by == "Judy Sakala" %}
+                                        <a href="https://www.facebook.com/share/XXcodq2zMqzrhGVs/?mibextid=LQQJ4d" style="text-decoration: none;">{{hot.posted_by}}</a>
+                                    {% elif hot.posted_by == "Charles Mulenga" %}
+                                        <a href="https://www.facebook.com/charlesmulengaofficial?mibextid=LQQJ4d" style="text-decoration: none;">{{hot.posted_by}}</a>
+
+
+                                    {% else %}
+                                        <b>{{hot.posted_by}}</b>
+                                    {% endif %}
+                                    </b> 
+                                    <small>{{hot.date_time}}</small></div>
+                                    <div style="text-align: right; margin-right: 30px;"><small><b>Views:</b> <i>{{hot.views}}k</i></small></div>
+                                <p style="text-align: center;"><img src="{{hot.image}}" height="175px" alt="{{hot.title}}"/>
+                                <p class='introduction'>{{hot.introduction}}</p>
+                                <p class='btn-end'><a href="{% url 'hot' hot.id %}" style="text-decoration: none;">Finish ...</a></p>
+                            </div><br/>
+                        {% endfor %}
+                    </div>
+                    
+                </div>
             </div>
             <br/>
             {% comment %} <div class="container">
